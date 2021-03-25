@@ -15,7 +15,7 @@ Torchvision 0.5.0
 ```python
 python run_exptPRLD_C10_CAL.py
 ```
-**Construct $ \hat D $:**
+**Construct $\hat D$:**
 
 Modify Lines 27-34 of *run_exptPRLD_C10_CAL.py* as: 
 ```python
