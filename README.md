@@ -12,10 +12,20 @@ Torchvision 0.5.0
 
 ## Instructions
 **Run the code:**
+
+CIFAR10:
 ```python
 python run_exptPRLD_C10_CAL.py
 ```
-**Construct $ \hat D $:**
+
+CIFAR100:
+```python
+python run_exptPRLD_C100_CAL.py
+```
+
+The following changes also apply to CIFAR100.
+
+**Construct $\hat D$:**
 
 Modify Lines 27-34 of *run_exptPRLD_C10_CAL.py* as: 
 ```python
@@ -42,8 +52,6 @@ lossfunc = "crossentropy_CAL" # use this lossfunc for CAL
 gpu_idx = "0"   # Choose one GPU index
 #---------------------------------------------------#
 ```
-
-
 
 
 ## Citation
