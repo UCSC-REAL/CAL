@@ -25,12 +25,12 @@ netARCH = "resnet_cifar34"
 
 
 #-------------- customized parameters --------------#
-noise_rate = 0.6
+noise_rate = 0.2
 
 lossfunc = "crossentropy"
 # lossfunc = "crossentropy_CAL"
 
-gpu_idx = "3"
+gpu_idx = "0"
 #---------------------------------------------------#
 
 
@@ -52,12 +52,12 @@ chosen_classes = list(range(100))
 
 # tune alpha_list if necessary
 if lossfunc == "crossentropy":
-    alpha_list = [0.0, 2.0, 2.0, 4.0] #  for distill
-    milestones = [10, 40, 80, 300]
+    alpha_list = [0.0, 1.0, 1.0] #  for distill. This is slightly different from the setting in paper. We move the *10 to noise_prior (equivalent)
+    milestones = [10, 40, 80]
     sample_weight_path = None
 elif lossfunc == "crossentropy_CAL":
-    alpha_list = [0.0, 1.0, 1.0, 2.0] # for CAL
-    milestones = [10, 40, 80, 300]
+    alpha_list = [0.0, 1.0, 1.0] # for CAL
+    milestones = [10, 40, 80]
     sample_weight_path = f'sieve_65_CE_{dataset}_{noise_rate}.pt'
 else:
     ValueError('Undefined loss functions')
