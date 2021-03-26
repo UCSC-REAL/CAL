@@ -5,7 +5,7 @@ This code is a PyTorch implementation of the paper "[A Second-Order Approach to 
 ## Prerequisites
 Python 3.6.9
 
-PyTorch 1.2.0
+PyTorch 1.4.0
 
 Torchvision 0.5.0
 
