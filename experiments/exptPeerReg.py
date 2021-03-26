@@ -104,6 +104,9 @@ class ExptPeerRegC10CAL(BaseExperiment):
             a = train_dataset.noisy_prior
             self.noisy_prior = list(np.sqrt(a)/np.sum(np.sqrt(a))) # for cifar10 Est \hat D
             print(f'Use sqrt prior: {self.noisy_prior}')
+        if train_dataset.num_classes == 100:
+            self.noisy_prior  = list(np.array(self.noisy_prior) * 10)
+
 
 
         # load weight and distilled samples here
