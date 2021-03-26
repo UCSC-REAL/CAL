@@ -52,7 +52,7 @@ chosen_classes = list(range(100))
 
 # tune alpha_list if necessary
 if lossfunc == "crossentropy":
-    alpha_list = [0.0, 1.0, 1.0] #  for distill. This is slightly different from the setting in paper. We move the *10 to noise_prior (equivalent)
+    alpha_list = [0.0, 1.0, 1.0] #  for sample selection. This is slightly different from the setting in paper. We move the *10 to noise_prior (equivalent)
     milestones = [10, 40, 80]
     sample_weight_path = None
 elif lossfunc == "crossentropy_CAL":
