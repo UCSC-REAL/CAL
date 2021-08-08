@@ -27,10 +27,10 @@ netARCH = "resnet_cifar34"
 #-------------- customized parameters --------------#
 noise_rate = 0.2
 
-# lossfunc = "crossentropy"
-lossfunc = "crossentropy_CAL"
+lossfunc = "crossentropy"
+# lossfunc = "crossentropy_CAL"
 
-gpu_idx = "0"
+gpu_idx = "2"
 #---------------------------------------------------#
 
 
