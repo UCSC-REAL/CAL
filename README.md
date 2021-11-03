@@ -68,4 +68,9 @@ If you find this code useful, please cite the following paper:
   year={2021}
 }
 ```
+##
+Corresponding authors:
 
+Dr. [Zhaowei Zhu](https://users.soe.ucsc.edu/~zhaoweizhu/): zwzhu@ucsc.edu
+
+Prof. [Yang Liu](http://www.yliuu.com/): yangliu@ucsc.edu
