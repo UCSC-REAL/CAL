@@ -1,4 +1,4 @@
-# A Second-Order Approach to Learning with Instance-Dependent Label Noise
+# A Second-Order Approach to Learning with Instance-Dependent Label Noise (CVPR'21 oral)
 This code is a PyTorch implementation of the paper "[A Second-Order Approach to Learning with Instance-Dependent Label Noise](https://arxiv.org/abs/2012.11854)" accepted by CVPR 2021 as oral presentation.
 
 
@@ -60,11 +60,12 @@ gpu_idx = "0"   # Choose one GPU index
 If you find this code useful, please cite the following paper:
 
 ```
-@article{zhu2020second,
-  title={A Second-Order Approach to Learning with Instance-Dependent Label Noise},
+@inproceedings{zhu2021second,
+  title={A second-order approach to learning with instance-dependent label noise},
   author={Zhu, Zhaowei and Liu, Tongliang and Liu, Yang},
-  journal={arXiv preprint arXiv:2012.11854},
-  year={2020}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10113--10123},
+  year={2021}
 }
 ```
 
